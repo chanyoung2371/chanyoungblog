@@ -72,3 +72,5 @@
 span{
     margin-left: 16px;
 }
+@media screen and (max-width: 1200px) { .nav-name { display: block; } }
+
