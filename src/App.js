@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+//import React, {useState} from 'react';
 import './App.css';
+//import Modal from './Component/Modal';
+//import List from './Component/List';
+import Nav from './Component/Nav/Nav';
+//import Header from './Component/Header';
+import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Map from './pages/Map';
+import Movie from './pages/Moviepage';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <Router>
+      <Nav/>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/movie' component={Movie} />
+        <Route path='/map' component={Map} />
+      </Switch>
+      </Router>
+      {/* <Header/>
+      <List/>
+  <Modal/>*/}
+    </>
   );
 }
+
 
 export default App;
