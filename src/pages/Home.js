@@ -6,7 +6,7 @@ function Home() {
         <div className='home'>
             <div className="card-wrap">
                 <div className="item">
-                <p>ㅎㅇㅇㅎ</p>
+                <p>Home</p>
                 </div>
 
             </div>

@@ -19,7 +19,7 @@ function Nav() {
       <Link to="#" className='menu-bars'>
         <BsIcons.BsReverseLayoutTextSidebarReverse onClick={showSidebar} />
       </Link>
-      <p className="nav-name">찬영--React</p>
+      <p className="nav-name">-찬영-</p>
     </div>
     <nav className={sidebar ? 'nav-menu active': 'nav-menu'}>
       <ul className='nav-menu-items'onClick={showSidebar}>
