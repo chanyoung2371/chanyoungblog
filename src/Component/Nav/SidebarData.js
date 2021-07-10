@@ -36,5 +36,11 @@ export const SidebarData= [
         icon: <IoIcons.IoMdHelpCircle />,
         cName: 'nav-text'
     },
+    {
+        title: 'Login',
+        path: '/Login',
+        icon: <RiIcons.RiLoginBoxLine />,
+        cName: 'nav-text'
+    }
     
 ]
