@@ -8,6 +8,7 @@ import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Map from './pages/Map';
 import Movie from './pages/Moviepage';
+import Login from './pages/Loginpage';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/movie' component={Movie} />
         <Route path='/map' component={Map} />
+        <Route path='/login' component={Login} />
       </Switch>
       </Router>
       {/* <Header/>
