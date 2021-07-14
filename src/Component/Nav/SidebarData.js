@@ -41,6 +41,12 @@ export const SidebarData= [
         path: '/Login',
         icon: <RiIcons.RiLoginBoxLine />,
         cName: 'nav-text'
+    },
+    {
+        title: 'Signup',
+        path: '/signup',
+        icon: <AiIcons.AiOutlineUserAdd/>,
+        cName:'nav-text'
     }
     
 ]

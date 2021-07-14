@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Map from './pages/Map';
 import Movie from './pages/Moviepage';
 import Login from './pages/Loginpage';
+import Signup from './pages/Signuppage';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/movie' component={Movie} />
         <Route path='/map' component={Map} />
         <Route path='/login' component={Login} />
+        <Route path='/signup' component={Signup}/>
       </Switch>
       </Router>
       {/* <Header/>
