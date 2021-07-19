@@ -30,20 +30,24 @@ const useStyles = makeStyles((theme) => ({
 
 function Loginpage(props) {
     const dispatch = useDispatch()
-    const [ID, setID] = useState("")
+    const [Email, setEmail] = useState("")
     const [Password, setPassword] = useState("")
-    const onIDHandler = (event) => {
-        setID(event.currentTarget.value) //글씨 칠 수 있게 
+    const onEmailHandler = (event) => {
+        setEmail(event.currentTarget.value) //글씨 칠 수 있게 
     }
     const onPasswordHandler = (event) =>{
         setPassword(event.currentTarget.value)
     }
     const onSubmitHandler = (event) =>{
         event.preventDefault(); //리프레쉬 방지 .
+        console.log('Email',Email)
+        console.log('Password', Password)
         let body={
-            id: ID,
+            email: Email,
             password: Password
         }
+        console.log('Email',Email)
+        console.log('Password', Password)
         dispatch(loginUser(body))
         //Axios.post('/api/user.login') //Axios 를 사용하여 post메소드 이용하여 서버에 보내기
         .then(response => {
@@ -59,7 +63,7 @@ function Loginpage(props) {
         <div className={classes.root}>
             <form className={classes.form} onSubmit={onSubmitHandler}>
                 <label>ID</label>
-                <input type="id" value={ID} onChange={onIDHandler} />
+                <input type="email" value={Email} onChange={onEmailHandler} />
                 <label>Password</label>
                 <input type="password" value={Password} onChange={onPasswordHandler} />
                 <button className={classes.button}>

@@ -35,12 +35,12 @@ const useStyles = makeStyles((theme) => ({
 
 function Signuppage(props) {
     const dispatch = useDispatch()
-    const [ID, setID] = useState("")
+    const [Email, setEmail] = useState("")
     const [Name, setName] = useState("")
     const [Password, setPassword] = useState("")
     const [Passwordcheck, setPasswordcheck] = useState("")
     const onIDHandler = (event) => {
-        setID(event.currentTarget.value) //글씨 칠 수 있게 
+        setEmail(event.currentTarget.value) //글씨 칠 수 있게 
     }
     const onNameHandler = (event) =>{
         setName(event.currentTarget.value)
@@ -57,7 +57,7 @@ function Signuppage(props) {
             return alert('비밀번호가 같지 않습니다.')
         }
         let body={
-            id: ID,
+            email: Email,
             password: Password,
             name:Name
         }   
@@ -75,8 +75,8 @@ function Signuppage(props) {
     return (
         <div className={classes.root}>
             <form className={classes.form} onSubmit={onSubmitHandler}>
-                <label>ID</label>
-                <input type="id" value={ID} onChange={onIDHandler} />
+                <label>Email</label>
+                <input type="email" value={Email} onChange={onIDHandler} />
 
                 <label>Name</label>
                 <input type="text" value={Name} onChange={onNameHandler} />
