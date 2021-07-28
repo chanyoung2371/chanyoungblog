@@ -16,16 +16,16 @@ function Nav() {
     <>
     <IconContext.Provider value={{color:'#fff'}}>
     <div className="nav">
-      <Link to="#" className='menu-bars'>
+      <Link to="#" className='menu-bar'>
         <BsIcons.BsReverseLayoutTextSidebarReverse onClick={showSidebar} />
       </Link>
-      <p className="nav-name">-찬영-</p>
+     
     </div>
     <nav className={sidebar ? 'nav-menu active': 'nav-menu'}>
       <ul className='nav-menu-items'onClick={showSidebar}>
         <li className ="navbar-toggle">
           <Link to="#" className='menu-bars'>
-            <AiIcons.AiOutlineClose />
+            <AiIcons.AiOutlineClose/>
           </Link>
 
         </li>
