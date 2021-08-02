@@ -6,11 +6,10 @@ import imgA from '../../images/pptitem1.jpeg'
 const useStyles = makeStyles((theme) => ({
 
     root: {
-       width:'30%',
-       marginLeft:'10%',
-       marginRight:'10%',
-       marginTop:'8%',
-       float: 'left',
+       width:'100%',
+        
+       marginTop:'10%',
+       
        
 
     },

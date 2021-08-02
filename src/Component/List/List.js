@@ -5,18 +5,14 @@ import { Block } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
 
     root: {
-        width: '50%',
-        float: 'right',
-        marginTop: '8%',
-      
-        
+        marginTop: '10%',  
     },
     ul: {
 
     },
     li: {
-        marginBottom: '6%',
-        padding: '20px 25px 17px 25px',
+        marginBottom: '10%',
+        padding: '5%',
         display: 'block',
         position: 'relative',
         backgroundColor: '#ded1c1',
@@ -34,13 +30,16 @@ function List() {
         <div className={classes.root}>
               <ul className={classes.ul}>
                 <li className={classes.li}>
-                    안녕하세요.
+                    이름: 백찬영
                 </li>
                 <li className={classes.li}>
-                    반갑습니다.
+                    이메일:chanyoung2371@naver.com
                 </li>
                 <li className={classes.li}>
-                    다시 만나요.
+                    전화번호: 010-4793-2371
+                </li>
+                <li className={classes.li}>
+                    좌우명: 나는 발전하는 사람이다.
                 </li>
                
            </ul>

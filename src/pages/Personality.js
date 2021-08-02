@@ -10,12 +10,13 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
+        padding: '5%'
     },
     item: {
         marginTop: '5%',
         width:'100%',
         display: 'flex',
-        padding: '3px',
+        padding: '5%',
     },
  
 
