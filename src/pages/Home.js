@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
 
     root: {
         textAlign: 'center',
-        backgroundColor:'rgb(68, 218, 168,0.4)',
+        backgroundColor:'rgb(31, 55, 94,1)',
         width:'100%',
         height:'100%',
         position: 'absolute',

@@ -13,4 +13,9 @@
  .Home{
    background-color:darkblue ;
  }
-  
+ @media screen and (max-width: 1090px) {
+  .card-wrap {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

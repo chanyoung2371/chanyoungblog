@@ -6,10 +6,12 @@ import Nav from './Component/Nav/Nav';
 //import Header from './Component/Header';
 import { BrowserRouter as Router,Switch,Route} from 'react-router-dom';
 import Home from './pages/Home';
-import Map from './pages/Map';
-import Movie from './pages/Moviepage';
+import Personality from './pages/Personality';
+import Forte from './pages/Forte';
 import Login from './pages/Loginpage';
 import Signup from './pages/Signuppage';
+import Family from './pages/Family';
+import Future from './pages/Future';
 
 function App() {
 
@@ -19,8 +21,10 @@ function App() {
       <Nav/>
       <Switch>
         <Route path='/chanyoungblog' exact component={Home}  />
-        <Route path='/movie' component={Movie} />
-        <Route path='/map' component={Map} />
+        <Route path='/forte' component={Forte} />
+        <Route path='/personality' component={Personality} />
+        <Route path='/family' component={Family}/>
+        <Route path='/future' component={Future}/>
         <Route path='/login' component={Login} />
         <Route path='/signup' component={Signup}/>
       </Switch>

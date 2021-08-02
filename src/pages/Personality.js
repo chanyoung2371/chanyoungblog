@@ -1,6 +1,5 @@
 import Card from '../Component/Card/Card'
 import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
 import React from 'react'
 import '../App.css'
 
@@ -22,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-function Home() {
+function Personality() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -41,4 +40,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Personality;

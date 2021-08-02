@@ -5,24 +5,26 @@ import { Block } from '@material-ui/icons';
 const useStyles = makeStyles((theme) => ({
 
     root: {
-       width:'50%',
-       float: 'right',
-       marginTop:'8%',
+        width: '50%',
+        float: 'right',
+        marginTop: '8%',
+      
+        
     },
     ul: {
 
     },
-    li:{
-        marginBottom:'6%',
+    li: {
+        marginBottom: '6%',
         padding: '20px 25px 17px 25px',
         display: 'block',
-        position:'relative',
-        backgroundColor: '#fff',
-        opacity:'0.8',
+        position: 'relative',
+        backgroundColor: '#ded1c1',
+        opacity: '0.8',
         border: '1px solid #9e9999',
         listStyle: 'none'
-    }
-
+    },
+ 
 }));
 
 
@@ -30,7 +32,7 @@ function List() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-           <ul className={classes.ul}>
+              <ul className={classes.ul}>
                 <li className={classes.li}>
                     안녕하세요.
                 </li>

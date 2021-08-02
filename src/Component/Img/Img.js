@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
        marginRight:'10%',
        marginTop:'8%',
        float: 'left',
-       borderRadius:'15px',
+       
 
     },
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import * as FaIcons from "react-icons/fa";
+import * as GiIcons from "react-icons/gi";
 import * as BsIcons from "react-icons/bs";
 import * as AiIcons from "react-icons/ai";
 import * as RiIcons from "react-icons/ri";
@@ -13,27 +14,27 @@ export const SidebarData= [
         cName: 'nav-text'
     },
     {
-        title: 'Movie',
-        path: '/movie',
-        icon: <RiIcons.RiMovie2Line/>,
+        title: 'Forte',
+        path: '/forte',
+        icon: <GiIcons.GiSwordsPower/>,
         cName: 'nav-text'
     },
     {
-        title: 'Map',
-        path: '/map',
-        icon: <BsIcons.BsMap/>,
+        title: 'personality',
+        path: '/personality',
+        icon: <BsIcons.BsPersonBoundingBox/>,
         cName: 'nav-text'
     },
     {
-        title: 'Messages',
-        path: '/messages',
-        icon: <FaIcons.FaEnvelopeOpenText />,
+        title: 'Family',
+        path: '/family',
+        icon: <GiIcons.GiFamilyTree/>,
         cName: 'nav-text'
     },
     {
-        title: 'Support',
-        path: '/support',
-        icon: <IoIcons.IoMdHelpCircle />,
+        title: 'Future',
+        path: '/future',
+        icon: <FaIcons.FaRobot />,
         cName: 'nav-text'
     },
     {
