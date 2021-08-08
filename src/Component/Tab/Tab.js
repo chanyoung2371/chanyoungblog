@@ -5,19 +5,19 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Container from '@material-ui/core/Container'
 import TypoGraphy from '@material-ui/core/Typography'
-import Reading from './Reading'
-import Coding from './Coding'
-import Thinking from './Thinking'
-import { CancelScheduleSendSharp } from '@material-ui/icons';
+import Reading from '../../Component/Card/Reading'
+import Coding from '../../Component/Card/Coding'
+import Thinking from '../../Component/Card/Thinking'
+
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    alignIten:'center',
-    justifyContent:'center',
   },
   content:{
-    alignIten:'center',
+    marginTop: '8%',
+    display:'flex',
+    alignItem:'center',
     justifyContent:'center',
   }
 
@@ -53,9 +53,10 @@ export default function CenteredTabs() {
     </Paper>
     <div className={classes.content}>
     {value === 0 && <Reading/>}
-    </div>
+   
     {value === 1 && <Coding/>}
     {value === 2 && <Thinking/>}
+    </div>
    
     </Container>
     </div>

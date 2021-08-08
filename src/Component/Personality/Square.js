@@ -1,22 +1,23 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import imgA from '../../images/family.png'
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
-       width:'100%',
+        padding: '10%',
+        borderBottom: 'solid 1px black',
+        backgroundColor: 'green',
+       
     },
-
 }));
 
-function Img() {
+
+function Square() {
     const classes = useStyles();
     return (
-        <div>
-            <img className={classes.root} src={imgA}></img>
+        <div className={classes.root}>
+            네모
         </div>
     )
 }
 
-export default Img
+export default Square

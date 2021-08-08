@@ -25,8 +25,16 @@ const useStyles = makeStyles((theme) => ({
         marginTop: '25%',
         fontSize: '7vw',
         fontFamily: 'Kaushan Script, cursive',
-      
+
     },
+    footer: {
+        position: 'fixed',
+        bottom: '0',
+        left: '0',
+        height: '200px',
+
+
+    }
 
 
 
@@ -40,8 +48,11 @@ function Home() {
             <Container>
                 <h4>About</h4>
                 <h1 className={classes.content}>BaekChanYoung</h1>
-                <Footer />
             </Container>
+            <Container>
+                <Footer className={classes.footer} />
+            </Container>
+
         </div>
 
     )

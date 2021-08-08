@@ -1,22 +1,22 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
-import imgA from '../../images/family.png'
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
-       width:'100%',
+        borderBottom: 'solid 1px black',
+        padding: '10%',
+        backgroundColor: 'blue',
     },
-
 }));
 
-function Img() {
+
+function Triangle() {
     const classes = useStyles();
     return (
-        <div>
-            <img className={classes.root} src={imgA}></img>
+        <div className={classes.root}>
+            세모
         </div>
     )
 }
 
-export default Img
+export default Triangle
