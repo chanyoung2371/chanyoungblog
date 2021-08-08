@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function List() {
+function HomeList() {
     const classes = useStyles();
     return (
         <div className={classes.root}>
@@ -47,4 +47,4 @@ function List() {
     )
 }
 
-export default List
+export default HomeList

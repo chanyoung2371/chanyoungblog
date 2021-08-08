@@ -12,6 +12,7 @@ import Login from './pages/Loginpage';
 import Signup from './pages/Signuppage';
 import Family from './pages/Family';
 import Future from './pages/Future';
+import AppBar from './Component/Nav/Appbar'
 
 function App() {
 
@@ -20,7 +21,7 @@ function App() {
      <Router>
       <Nav/>
       <Switch>
-        <Route path='/chanyoungblog' exact component={Home}  />
+        <Route path='/' exact component={Home}  />
         <Route path='/forte' component={Forte} />
         <Route path='/personality' component={Personality} />
         <Route path='/family' component={Family}/>

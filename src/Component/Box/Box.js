@@ -2,11 +2,10 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import { Container, Grid } from '@material-ui/core';
 import Img from '../Img/Img'
-import List from '../List/List'
+import List from '../List/HomeList'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        height: '800px',
         flexGrow: '1',
         background: 'white',
         background: 'linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.1))',

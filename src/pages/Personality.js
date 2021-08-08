@@ -1,5 +1,6 @@
 import Card from '../Component/Card/Card'
 import { makeStyles } from '@material-ui/core/styles';
+import { Container, Grid} from '@material-ui/core';
 import React from 'react'
 import '../App.css'
 
@@ -14,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
     item: {
         marginTop: '5%',
+        
         width:'100%',
         display: 'flex',
         padding: '5%',
@@ -27,11 +29,13 @@ function Personality() {
     return (
         <div className={classes.root}>
             <div className="card-wrap">
+                <Container>
                 <div className={classes.item}>
                     <Card></Card>
                     <Card></Card>
                     <Card></Card>
                 </div>
+                </Container>
 
             </div>
 

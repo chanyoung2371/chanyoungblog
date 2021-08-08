@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
     root: {
        width:'100%',
         
-       marginTop:'10%',
+       marginTop:'5%',
+       marginBottom:'5%',
        
        
 

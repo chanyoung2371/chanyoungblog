@@ -4,35 +4,46 @@ import imgA from '../images/index_head.jpeg'
 import '../style/Home.css'
 import Box from '../Component/Box/Box'
 import Paper from '../Component/Paper/Paper'
+import Container from '@material-ui/core/Container'
+import Footer from '../Component/Footer/Footer'
 
 const useStyles = makeStyles((theme) => ({
 
+
+
     root: {
         textAlign: 'center',
-        backgroundColor:'rgb(31, 55, 94,1)',
-        width:'100%',
-        height:'100%',
-        position: 'absolute',
-        zIndex:'2'
+        backgroundColor: 'rgb(31, 55, 94,1)',
+        width: '100%',
+        height: '100%',
+        position: 'fixed',
+        display: 'block',
+        zIndex: '2',
+        color: '#FFF',
     },
-    box:{
-        marginTop:'5%',  
+    content: {
+        marginTop: '25%',
+        fontSize: '7vw',
+        fontFamily: 'Kaushan Script, cursive',
+      
     },
-  
-    
-    
+
+
+
 
 }));
 
 function Home() {
     const classes = useStyles();
     return (
-        <div className={classes.root}> 
-        <div className ={classes.box}>
-            <Box/>
-            </div>            
+        <div className={classes.root}>
+            <Container>
+                <h4>About</h4>
+                <h1 className={classes.content}>BaekChanYoung</h1>
+                <Footer />
+            </Container>
         </div>
-        
+
     )
 }
 
