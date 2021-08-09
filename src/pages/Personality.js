@@ -36,26 +36,27 @@ function Personality() {
             <Container>
                 <div className={classes.item}>
                     <Grid container spacing={3}>
-                        <Grid item xs={3}>
-                            <Link to ="#">
-                            <One onClick={()=> setColor('red')}/>
-                            </Link>
+                        <Grid item xs={4}>  
+                            <One/>                          
                         </Grid>
-                        <Grid itex xs={9}>
-                            <OneData color={color}/>
+                        <Grid itex xs={8}>
+                            <OneData/>
                         </Grid>
-                        <Grid item xs={3}>
-                            <Triangle />
-                        </Grid>
-                        <Grid itex xs={9}>
-                            <TriangleData/>
-                        </Grid>
-                        <Grid item xs={3}>
-                            <Square />
-                        </Grid>
-                        <Grid itex xs={9}>
+                        <Grid itex xs={8}>
                             <SquareData/>
                         </Grid>
+                        <Grid item xs={4}>
+                            <Square/>
+                            </Grid>
+                        <Grid item xs={4}>
+                            <Triangle/>
+                        </Grid>
+                        <Grid itex xs={8}>
+                            <TriangleData/>
+                        </Grid>
+                     
+                       
+                     
                     </Grid>
                 </div>
                 <Footer />

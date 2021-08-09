@@ -1,13 +1,13 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
+import imgA from '../../images/curiosity.png'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-            width: '300px',
-            height: '300px',
-            background: 'red',
-            borderRadius: '50%',
-        
+            width: '100%', 
+    },
+    img: {
+            width: '100%',
     },
 }));
 
@@ -16,7 +16,7 @@ function One() {
     return (
         
         <div className={classes.root}>
-            
+            <img className={classes.img}src={imgA}></img>
         </div>
     )
 }
