@@ -3,9 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: '10%',
-        borderBottom: 'solid 1px black',
-        backgroundColor: 'red',
+            width: '300px',
+            height: '300px',
+            background: 'red',
+            borderRadius: '50%',
         
     },
 }));
@@ -15,7 +16,7 @@ function One() {
     return (
         
         <div className={classes.root}>
-            동그라미
+            
         </div>
     )
 }
