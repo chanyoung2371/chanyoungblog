@@ -52,10 +52,10 @@ function Personality() {
                             <Triangle/>
                         </Grid>
                         <Grid itex xs={8}>
+                            <Container>
                             <TriangleData/>
+                            </Container>
                         </Grid>
-                     
-                       
                      
                     </Grid>
                 </div>
