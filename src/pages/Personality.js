@@ -1,5 +1,6 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
+import { useMediaQuery } from '@material-ui/core';
 import { Container, Grid } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import One from '../Component/Personality/One';
@@ -8,7 +9,7 @@ import Square from '../Component/Personality/Square';
 import SquareData from '../Component/Personality/SquareData'
 import Triangle from '../Component/Personality/Triangle';
 import TriangleData from '../Component/Personality/TriangleData'
-import Footer from '../Component/Footer/Footer';
+import Footer from '../Component/Footer/Footer'
 import '../App.css'
 
 
@@ -22,41 +23,46 @@ const useStyles = makeStyles((theme) => ({
     item: {
         textAlign: 'left',
     },
-
-
+    mobile: {
+        display: 'none',
+    },
+    datamobile: {
+        marginLeft: '18%',
+    },
 
 }));
 
 function Personality() {
-
+    const [color, setColor] = useState('black')
     const classes = useStyles();
+    const isMobile = useMediaQuery("(max-width:600px)");
     return (
         <div className={classes.root}>
             <Container>
+                <h1> 나의 성격</h1>
                 <div className={classes.item}>
-                <h1 align='center'>당신은 어떤 사람인가요?</h1>
                     <Grid container spacing={3}>
-                        <Grid item xs={4}>  
-                            <One/>                          
+                        <Grid className={isMobile ? classes.mobile : classes.grid} item xs={4}>
+                            <One />
                         </Grid>
-                        <Grid itex xs={8}>
-                            <OneData/>
+                        <Grid className={isMobile ? classes.datamobile: classes.data} itex xs={8}>
+                            <OneData />
                         </Grid>
-                        <Grid itex xs={8}>
-                            <SquareData/>
+                        <Grid className={isMobile ? classes.datamobile: classes.data} itex xs={8}>
+                            <SquareData />
                         </Grid>
-                        <Grid item xs={4}>
-                            <Square/>
-                            </Grid>
-                        <Grid item xs={4}>
-                            <Triangle/>
+                        <Grid className={isMobile ? classes.mobile : classes.grid} item xs={4}>
+                            <Square />
                         </Grid>
-                        <Grid itex xs={8}>
-                            <Container>
-                            <TriangleData/>
-                            </Container>
+                        <Grid className={isMobile ? classes.mobile : classes.grid} item xs={4}>
+                            <Triangle />
                         </Grid>
-                     
+                        <Grid className={isMobile ? classes.datamobile: classes.data} itex xs={8}>
+                            <TriangleData />
+                        </Grid>
+
+
+
                     </Grid>
                 </div>
                 <Footer />

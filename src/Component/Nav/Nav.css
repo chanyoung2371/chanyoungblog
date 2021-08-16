@@ -85,14 +85,9 @@ span{
 }
 @media screen and (max-width: 1200px) { .nav-name { display: block; } }
 @media screen and (max-width: 765px) {
-    .nav-menu.active {
-        left:0;
-        transition: 350ms;
-    }
-    .nav-text a{
-        font-size: 12px;
-    }
+   
     .nav-menu{
-        width: 190px;
+        width: 210px;
+        background-color: rgba(0,0,0,0.7);
     }
   }
