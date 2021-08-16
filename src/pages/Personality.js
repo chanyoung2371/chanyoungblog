@@ -28,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Personality() {
-    const[color,setColor]= useState('black')
 
     const classes = useStyles();
     return (
         <div className={classes.root}>
             <Container>
                 <div className={classes.item}>
+                <h1 align='center'>당신은 어떤 사람인가요?</h1>
                     <Grid container spacing={3}>
                         <Grid item xs={4}>  
                             <One/>                          

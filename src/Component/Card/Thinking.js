@@ -30,15 +30,11 @@ export default function MediaCard() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="h2">
-          독서를 언제부터 시작했나요?
+          주로 어떤식으로 떠오르시나요 ?
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          중학교 1학년 때 처음 독서를 시작하였으며 처음 책은
-          축구선수 박지성의 자서전 '더 큰 나를 위해 나를 버리다'이었습니다.
-          현재의 나, 미래의 나를 생각할 수 있게 하고 지치고 힘이 들 때 생각이 나 힘이 되어준 책이며,
-          지금은
-          지인에게 추천하고 싶은 책 1순위 입니다.
-
+         길을 가다가 재미있는 거리가 있으면 메모를 하여 마인드맵을 그립니다. 또, 노래를 듣거나 영상을 시청하다가 관심가는 거리가 생기면
+         메모를 하여 마인드맵을 그려 저의 아이디어를 도출해냅니다. 아이디어라는 것은 일상에서 나오는 것이라 생각합니다.
 
         </Typography>
       </CardContent>
