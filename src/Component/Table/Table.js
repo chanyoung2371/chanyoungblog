@@ -10,20 +10,18 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles({
   table: {
-    minWidth: 650,
+    minWidth: "100%",
   },
 });
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, relationship, age,) {
+  return { name, relationship, age,};
 }
 
 const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-  createData('Eclair', 262, 16.0, 24, 6.0),
-  createData('Cupcake', 305, 3.7, 67, 4.3),
-  createData('Gingerbread', 356, 16.0, 49, 3.9),
+  createData( '부', '아산','사업가' ),
+  createData( '동생' ,'평택','사원'),
+  createData('본인','아산','학생'),
 ];
 
 export default function BasicTable() {
@@ -34,23 +32,17 @@ export default function BasicTable() {
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>관계</TableCell>
-            <TableCell align="right">나이</TableCell>
-            <TableCell align="right">성격</TableCell>
-            <TableCell align="right">사는 곳</TableCell>
-            <TableCell align="right">직업</TableCell>
+            <TableCell align="left">관계</TableCell>
+            <TableCell align="left">사는 곳</TableCell>
+            <TableCell align="left">직업</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
-            <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">{row.calories}</TableCell>
-              <TableCell align="right">{row.fat}</TableCell>
-              <TableCell align="right">{row.carbs}</TableCell>
-              <TableCell align="right">{row.protein}</TableCell>
+            <TableRow>
+              <TableCell align="left">{row.name}</TableCell>
+              <TableCell align="left">{row.relationship}</TableCell>
+              <TableCell align="left">{row.age}</TableCell>
             </TableRow>
           ))}
         </TableBody>
