@@ -1,5 +1,6 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
+import { useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -13,7 +14,13 @@ const useStyles = makeStyles((theme) => ({
     listStyle: 'none',
     border: '1px solid black',
     marginBottom: '4%',
-    
+  },
+  ul:{
+    padding: '0'
+  },
+  mobileul:{
+    marginLeft:'10%',
+    marginRight:'15%'
   }
   
 
@@ -21,9 +28,10 @@ const useStyles = makeStyles((theme) => ({
 
 function TenList() {
   const classes = useStyles();
+  const isMobile = useMediaQuery("(max-width:799px)");
   return (
     <div className={classes.root}>
-      <ul>
+      <ul className={isMobile? classes.mobileul: classes.ul}>
         <li className={classes.list}>1.사업:
         <p>꾸준히 저축한 돈과 대출로 오래 전부터 꿈이었던 나의 뷰가 좋고
             디저트가 맛있는 카페를 차렸을 것이다.

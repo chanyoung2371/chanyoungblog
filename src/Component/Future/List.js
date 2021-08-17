@@ -1,5 +1,6 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core/styles'
+import { useMediaQuery } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -14,16 +15,24 @@ const useStyles = makeStyles((theme) => ({
     border: '1px solid black',
     marginBottom: '4%',
     
+  },
+  ul:{
+    padding: '0'
+  },
+  mobileul:{
+    marginLeft:'10%',
+    marginRight:'15%'
   }
   
 
 }));
 
 function List() {
+  const isMobile = useMediaQuery("(max-width:799px)");
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <ul>
+      <ul className={isMobile? classes.mobileul: classes.ul}>
         <li className={classes.list}>1.직장 생활:
         <p>회사 프로젝트에서 주도권을 가지고 나의 주장을 펼치고 있을 것이며
           회사 동료들과 좋은 관계를 형성하여 즐거운 회사생활을 하고 있을 것이다.

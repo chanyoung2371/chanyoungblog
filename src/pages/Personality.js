@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     datamobile: {
         marginLeft: '18%',
     },
+ 
 
 }));
 
@@ -45,10 +46,10 @@ function Personality() {
                         <Grid className={isMobile ? classes.mobile : classes.grid} item xs={4}>
                             <One />
                         </Grid>
-                        <Grid className={isMobile ? classes.datamobile: classes.data} itex xs={8}>
+                        <Grid className={isMobile ? classes.datamobile: classes.data} item xs={8}>
                             <OneData />
                         </Grid>
-                        <Grid className={isMobile ? classes.datamobile: classes.data} itex xs={8}>
+                        <Grid className={isMobile ? classes.datamobile: classes.data} item xs={8}>
                             <SquareData />
                         </Grid>
                         <Grid className={isMobile ? classes.mobile : classes.grid} item xs={4}>
@@ -57,7 +58,7 @@ function Personality() {
                         <Grid className={isMobile ? classes.mobile : classes.grid} item xs={4}>
                             <Triangle />
                         </Grid>
-                        <Grid className={isMobile ? classes.datamobile: classes.data} itex xs={8}>
+                        <Grid className={isMobile ? classes.datamobile: classes.data} item xs={8}>
                             <TriangleData />
                         </Grid>
 

@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
         
     },
+    img:{
+        width:'100%',
+    }
 }));
 
 
@@ -30,7 +33,7 @@ function Family() {
             <Container>
             <h1 className={classes.h1}> 가족 관계도 </h1>
                 <div className={classes.item}>
-                    <Img/>      
+                    <Img className={classes.img}/>      
                 </div>
                 <div>
                     <Table/>
